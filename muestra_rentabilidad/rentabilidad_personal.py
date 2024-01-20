@@ -11,7 +11,7 @@ query = '''
     GROUP BY o.EmployeeID
     ORDER BY Total DESC
 '''
-
+# comentario de test
 top_employees = pd.read_sql_query(query, conn)
 top_employees.plot(x="Employee", y="Total", kind="bar", figsize=(10, 5), legend=False)
 
